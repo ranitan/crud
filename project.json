@@ -1,95 +1,76 @@
 {
-    "project":[
-        {
-            "Projectid":1,
-            "Projectname":"Perlmutter",
-            "Leadname":"Graham",
-            "Startdate":"29-03-2002",
-            "Duration":"2 years",
-            "Memberno":10,
-            "Projectlogo":"C:/Users/cgvak/Desktop/crud/asset/images/perlmutterlogo1.png"
-        },
-        {
-            "Projectid":2,
-            "Projectname":"Mineral",
-            "Leadname":"Ellis",
-            "Startdate":"29-12-1988",
-            "Duration":"1 year",
-            "Memberno":5,
-            "Projectlogo":"C:/Users/cgvak/Desktop/crud/asset/images/minerallogo.png"
-        },
-        {
-            "Projectid":3,
-            "Projectname":"Club house",
-            "Leadname":"Edith",
-            "Startdate":"20-6-2012",
-            "Duration":"6 months",
-            "Memberno":6,
-            "Projectlogo":"C:/Users/cgvak/Desktop/crud/asset/images/clubhouselogo.png"
-        },
-        {
-            "Projectid":4,
-            "Projectname":"Multi-node quantum network",
-            "Leadname":"Brakton",
-            "Startdate":"07-04-2023",
-            "Duration":"2 years",
-            "Memberno":10,
-            "Projectlogo":"C:/Users/cgvak/Desktop/crud/asset/images/networklogo.png"
-        },
-        {
-            "Projectid":5,
-            "Projectname":"Immunity passport service design",
-            "Leadname":"Greyson",
-            "Startdate":"09-09-2009",
-            "Duration":"6 months",
-            "Memberno":5,
-            "Projectlogo":"C:/Users/cgvak/Desktop/crud/asset/images/passportlogo.png"
-        },
-        {
-            "Projectid":6,
-            "Projectname":"Hibrit steel plant",
-            "Leadname":"Ember",
-            "Startdate":"10-03-2002",
-            "Duration":"1 year",
-            "Memberno":7,
-            "Projectlogo":"C:/Users/cgvak/Desktop/crud/asset/images/steelplantlogo.gif"
-        },
-        {
-            "Projectid":7,
-            "Projectname":"Jiuzhang Prototype Quantum Computer",
-            "Leadname":"Hailee",
-            "Startdate":"13-09-2001",
-            "Duration":"6 months",
-            "Memberno":10,
-            "Projectlogo":"C:/Users/cgvak/Desktop/crud/asset/images/computerlogo.png"
-        },
-        {
-            "Projectid":8,
-            "Projectname":"Windows 11",
-            "Leadname":"Hudson",
-            "Startdate":"11-01-2000",
-            "Duration":"5 days",
-            "Memberno":6,
-            "Projectlogo":"C:/Users/cgvak/Desktop/crud/asset/images/window11logo.png"
-        },
-        {
-            "Projectid":9,
-            "Projectname":"Tecla",
-            "Leadname":"Cooper",
-            "Startdate":"09-03-2022",
-            "Duration":"3 days",
-            "Memberno":9,
-            "Projectlogo":"C:/Users/cgvak/Desktop/crud/asset/images/teclalogo.png"
-        },
-        {
-            "Projectid":10,
-            "Projectname":"The Night Watch Restoration",
-            "Leadname":"Harper",
-            "Startdate":"02-05-2002",
-            "Duration":"2 months",
-            "Memberno":7,
-            "Projectlogo":"C:/Users/cgvak/Desktop/crud/asset/images/watchlogo.png"
-        }
- 
-    ]
+  "project": [
+    {
+      "id": 3,
+      "Projectname": "Club house",
+      "Leadname": "Edith",
+      "Startdate": "20-6-2012",
+      "Duration": "6 months",
+      "Memberno": 6,
+      "Projectlogo": "C:/Users/hp/Desktop/crud/asset/images/clubhouselogo.png"
+    },
+    {
+      "id": 4,
+      "Projectname": "Multi-node quantum network",
+      "Leadname": "Brakton",
+      "Startdate": "07-04-2023",
+      "Duration": "2 years",
+      "Memberno": 10,
+      "Projectlogo": "C:/Users/hp/Desktop/crud/asset/images/networklogo.png"
+    },
+    {
+      "id": 5,
+      "Projectname": "Immunity passport service design",
+      "Leadname": "Greyson",
+      "Startdate": "09-09-2009",
+      "Duration": "6 months",
+      "Memberno": 5,
+      "Projectlogo": "C:/Users/hp/Desktop/crud/asset/images/passportlogo.png"
+    },
+    {
+      "id": 6,
+      "Projectname": "Hibrit steel plant",
+      "Leadname": "Ember",
+      "Startdate": "10-03-2002",
+      "Duration": "1 year",
+      "Memberno": 7,
+      "Projectlogo": "C:/Users/hp/Desktop/crud/asset/images/steelplantlogo.gif"
+    },
+    {
+      "id": 7,
+      "Projectname": "Jiuzhang Prototype Quantum Computer",
+      "Leadname": "Hailee",
+      "Startdate": "13-09-2001",
+      "Duration": "6 months",
+      "Memberno": 10,
+      "Projectlogo": "C:/Users/hp/Desktop/crud/asset/images/computerlogo.png"
+    },
+    {
+      "id": 8,
+      "Projectname": "Windows 11",
+      "Leadname": "Hudson",
+      "Startdate": "11-01-2000",
+      "Duration": "5 days",
+      "Memberno": 6,
+      "Projectlogo": "C:/Users/hp/Desktop/crud/asset/images/window11logo.png"
+    },
+    {
+      "Projectlogo": "C:/Users/cgvak/Desktop/crud/asset/images/projectrepeat.png",
+      "Projectname": "Tecla",
+      "Leadname": "Cooper",
+      "Startdate": "09-03-2022",
+      "Duration": "3 days",
+      "Memberno": "09-03-2022",
+      "id": 9
+    },
+    {
+      "Projectlogo": "C:/Users/hp/Desktop/crud/asset/images/projectrepeat.png",
+      "Projectname": "ranita",
+      "Leadname": "database",
+      "Startdate": "20-06-2023",
+      "Duration": "3 months",
+      "Memberno": "1",
+      "id": 11
+    }
+  ]
 }
