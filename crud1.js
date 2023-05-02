@@ -12,6 +12,7 @@ function loadTable() {
         console.log(this.responseText);
         var trHTML = "";
         const objects = JSON.parse(this.responseText);
+     
         for (let object of objects) {
           trHTML += "<tr>";
           trHTML += "<td>" + object["id"] + "</td>";
@@ -42,6 +43,7 @@ function loadTable() {
   loadTable();
 
   function showUserCreateBox() {
+
     //https://sweetalert2.github.io/v9.html
     Swal.fire({
       title: "Create user",
