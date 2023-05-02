@@ -9,37 +9,48 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+
 
   <title>CRUD PROJECT</title>
 
   <link href="crud.css" rel="stylesheet">
+  <!-- <script src="validate.js"></script> -->
 
 </head>
 
 <body>
 
-
-   <nav class="navbar navbar-light bg-light">
-      <div class="container-fluid">
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
+  <nav class="navbar navbar-light bg-light">
+    <div id="nav" class="container-fluid" style="background-color:darkcyan ;">
+      <p><b>PROJECTS</b></p>
+     <form class="d-flex">
+      <input id="searchbar" onkeyup="search_project()" type="text"
+      name="search" placeholder="Search projects..">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
     </nav> 
 
+<div class="dropdown" id="list">
+    <!-- ordered list -->
 
-  <div class="container">
-    <div class="d-flex bd-highlight mb-3">
-      <div class="me-auto p-2 bd-highlight">
-        <h2>TOP INDUSTRY PROJECTS
-      </div>
-      <div class="p-2 bd-highlight">
-        <button type="button" class="btn btn-secondary" onclick="showUserCreateBox()">CREATE</button>
-      </div>
+</div>
+
+<div class="container">
+  <div class="d-flex bd-highlight mb-3">
+    <div class="me-auto p-2 bd-highlight">
+      <h2>TOP INDUSTRY PROJECTS
     </div>
+    <div class="p-2 bd-highlight">
+      <button type="button" class="btn btn-secondary" onclick="showUserCreateBox()">CREATE</button>
+    </div>
+  </div>
 
-    <div class="table-responsive">
+
+  <div class="table-responsive">
       <table class="table">
         <thead>
           <tr>
@@ -68,6 +79,25 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
     crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="sweetalert2/dist/sweetalert2.css">
+
+  <!-- <script>
+    function search_project() {
+      let input = document.getElementById('searchbar').value
+      input=input.toLowerCase();
+      let x = document.getElementsByClassName('project');
+      
+      for (i = 0; i < x.length; i++) {
+        if (!x[i].innerHTML.toLowerCase().includes(input)) {
+          x[i].style.display="none";
+        }
+        else {
+          x[i].style.display="list-item";				
+        }
+      }
+    }
+    </script> -->
+
 
 </body>
 

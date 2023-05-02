@@ -1,22 +1,13 @@
 {
   "project": [
     {
-      "id": 3,
-      "Projectname": "Club house",
-      "Leadname": "Edith",
-      "Startdate": "20-6-2012",
-      "Duration": "6 months",
-      "Memberno": 6,
-      "Projectlogo": "C:/Users/hp/Desktop/crud/asset/images/clubhouselogo.png"
-    },
-    {
-      "id": 4,
+      "Projectlogo": "C:/Users/cgvak/Desktop/crud/asset/images/projectrepeat.png",
       "Projectname": "Multi-node quantum network",
       "Leadname": "Brakton",
       "Startdate": "07-04-2023",
-      "Duration": "2 years",
-      "Memberno": 10,
-      "Projectlogo": "C:/Users/hp/Desktop/crud/asset/images/networklogo.png"
+      "Duration": "2",
+      "Memberno": "07-04-2023",
+      "id": 4
     },
     {
       "id": 5,
@@ -55,22 +46,13 @@
       "Projectlogo": "C:/Users/hp/Desktop/crud/asset/images/window11logo.png"
     },
     {
-      "Projectlogo": "C:/Users/cgvak/Desktop/crud/asset/images/projectrepeat.png",
-      "Projectname": "Tecla",
-      "Leadname": "Cooper",
-      "Startdate": "09-03-2022",
-      "Duration": "3 days",
-      "Memberno": "09-03-2022",
-      "id": 9
-    },
-    {
       "Projectlogo": "C:/Users/hp/Desktop/crud/asset/images/projectrepeat.png",
-      "Projectname": "ranita",
-      "Leadname": "database",
-      "Startdate": "20-06-2023",
-      "Duration": "3 months",
-      "Memberno": "1",
-      "id": 11
+      "Projectname": "frontend",
+      "Leadname": "",
+      "Startdate": "",
+      "Duration": "",
+      "Memberno": "",
+      "id": 9
     }
   ]
 }

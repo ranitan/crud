@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $("#mycrud").validate({
+    $("#myform").validate({
       rules: {
         Projectname: {
           required: true,
@@ -33,3 +33,4 @@ $(document).ready(function () {
       },
     });
   });
+

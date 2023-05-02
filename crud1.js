@@ -48,17 +48,40 @@ function loadTable() {
     Swal.fire({
       title: "Create user",
       html:
+      '<form id="myform"  class="was-validated">'+
         '<input id="id" type="hidden">' +
-        '<input id="Projectname" class="swal2-input" placeholder="Projectname">' +
-        '<input id="Leadname" class="swal2-input" placeholder="Leadname">' +
-        '<input id="Startdate" class="swal2-input" placeholder="Startdate">' +
-        '<input id="Duration" class="swal2-input" placeholder="Duration">'+
-        '<input id="Memberno" class="swal2-input" placeholder="Memberno">',
-      preConfirm: () => {
-        userCreate();
-      },
-    });
-  }
+        '<input id="Projectname" class="swal2-input" placeholder="Projectname" required >' +
+        '<input id="Leadname" class="swal2-input" placeholder="Leadname" required >' +
+        '<input id="Startdate" class="swal2-input" placeholder="Startdate" required >' +
+        '<input id="Duration" class="swal2-input" placeholder="Duration" required>'+
+        '<input id="Memberno" class="swal2-input" placeholder="Memberno" required>'+
+        '</form>',
+        preConfirm: async () => {
+          const form = document.getElementById('myform');
+          if (!form.checkValidity()) {
+            Swal.showValidationMessage('Please fill out all required fields.');
+            return;
+          }
+          try {
+            post();
+            Swal.fire({
+              icon: "success",
+              title: "project added successfully",//for success message
+             
+            });
+            loadTable();
+          } catch (error) {
+            Swal.fire({
+              icon: "error",
+              title: "Error",
+              text: error.message
+            });
+          }
+        },
+      });
+    }
+         
+       
   
   function userCreate() {
     const Projectname = document.getElementById("Projectname").value;

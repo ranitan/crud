@@ -1,9 +1,8 @@
 body{
-    
-    background: rgb(2,0,36);
+background: rgb(2,0,36);
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,116,1) 52%, rgba(0,212,255,1) 100%);
 }
-th,tr{
+th,tr,p{
     color: aliceblue;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -40,7 +39,30 @@ h1,h2{
     border-image: initial;
 
 }
-nav{
-   
-}
+#searchbar{
+    margin-left: 15%;
+    padding:15px;
+    border-radius: 10px;
+  }
+
+  input[type=text] {
+     width: 30%;
+     -webkit-transition: width 0.15s ease-in-out;
+     transition: width 0.15s ease-in-out;
+  }
+
+  /* When the input field gets focus,
+       change its width to 100% */
+  input[type=text]:focus {
+    width: 70%;
+  }
+
+ #list{
+   font-size:  1.5em;
+   margin-left: 90px;
+  }
+
+.project{
+  display: list-item;    
+ } 
 
