@@ -1,12 +1,8 @@
-//https://javascript.info/xmlhttprequest#http-headers
-// npm install -g json-server
-// json-server --watch db.json in Terminal(command prompt)
 function loadTable() {
     const xhttp = new XMLHttpRequest();
     xhttp.open("GET", "http://localhost:3000/project");
     xhttp.send();
-    //https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest 
-    //XMLHttpRequest Methods and Properties
+    
     xhttp.onreadystatechange = function () {
       if (this.readyState == 4 && this.status == 200) {
         console.log(this.responseText);
@@ -43,8 +39,6 @@ function loadTable() {
   loadTable();
 
   function showUserCreateBox() {
-
-    //https://sweetalert2.github.io/v9.html
     Swal.fire({
       title: "Create user",
       html:
@@ -63,7 +57,7 @@ function loadTable() {
             return;
           }
           try {
-            post();
+            userCreate();
             Swal.fire({
               icon: "success",
               title: "project added successfully",//for success message
