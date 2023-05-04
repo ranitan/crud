@@ -5,8 +5,8 @@
       "Projectname": "Multi-node quantum network",
       "Leadname": "Brakton",
       "Startdate": "07-04-2023",
-      "Duration": "2",
-      "Memberno": "07-04-2023",
+      "Duration": "2 days",
+      "Memberno": "6",
       "id": 4
     },
     {
@@ -28,22 +28,22 @@
       "Projectlogo": "C:/Users/hp/Desktop/crud/asset/images/steelplantlogo.gif"
     },
     {
-      "id": 7,
+      "Projectlogo": "C:/Users/hp/Desktop/crud/asset/images/projectrepeat.png",
       "Projectname": "Jiuzhang Prototype Quantum Computer",
-      "Leadname": "Hailee",
-      "Startdate": "13-09-2001",
-      "Duration": "6 months",
-      "Memberno": 10,
-      "Projectlogo": "C:/Users/hp/Desktop/crud/asset/images/computerlogo.png"
+      "Leadname": "yadav",
+      "Startdate": "20-09-2009",
+      "Duration": "2 yeas",
+      "Memberno": "10",
+      "id": 7
     },
     {
-      "id": 8,
-      "Projectname": "Windows 11",
-      "Leadname": "Hudson",
-      "Startdate": "11-01-2000",
-      "Duration": "5 days",
-      "Memberno": 6,
-      "Projectlogo": "C:/Users/hp/Desktop/crud/asset/images/window11logo.png"
+      "Projectlogo": "C:/Users/hp/Desktop/crud/asset/images/projectrepeat.png",
+      "Projectname": "fullstack",
+      "Leadname": "ranita",
+      "Startdate": "j",
+      "Duration": "3 months",
+      "Memberno": "fgj",
+      "id": 8
     }
   ]
 }
