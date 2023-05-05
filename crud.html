@@ -12,6 +12,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
   <title>CRUD PROJECT</title>
@@ -22,35 +23,140 @@
 </head>
 
 <body>
+  <div>
+    <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">G2 TECHNOLOGY</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01"
+          aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-  <nav class="navbar navbar-light bg-light">
-    <div id="nav" class="container-fluid" style="background-color:darkcyan ;">
-      <p><b>PROJECTS</b></p>
-     <form class="d-flex">
-      <input id="searchbar" onkeyup="search_project()" type="text"
-      name="search" placeholder="Search projects..">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-    </nav> 
+        <div class="collapse navbar-collapse" id="navbarsExample01">
+          <ul class="navbar-nav me-auto mb-2">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page"
+                href="https://in.linkedin.com/company/g2-technology-solutions-pvt-ltd">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"
+                href="https://www.glassdoor.co.in/Reviews/G2-Technology-Solutions-Reviews-E1292034.htm">REVIEWS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="https://g2.com.au/contact/" tabindex="-1"
+                aria-disabled="true">CONTACTS</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown"
+                aria-expanded="false">Dropdown</a>
+              <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                <li><a class="dropdown-item"
+                    href="https://www.ambitionbox.com/overview/g2-technology-solutions-overview"></a>OVERVIEW</a></li>
+                <li><a class="dropdown-item" href="https://craft.co/g2-technology-solutions"></a>PROFILE</li>
+                <li><a class="dropdown-item" href="#"></a></li>
+              </ul>
+            </li>
+          </ul>
+          <form>
+            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- cards -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="asset/images/card1.jpg" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">FULLSTACK IDEAS</h5>
 
-<div class="dropdown" id="list">
-    <!-- ordered list -->
+            <a href="https://www.mygreatlearning.com/blog/fastest-growing-tech-jobs/" class="btnc btn-primary toggle-btn"
+              data-toggle="collapse" data-target="#project1-details">Learn more</a>
 
-</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="asset/images/card5.jpg" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">DATABASE IDEAS</h5>
 
-<div class="container">
-  <div class="d-flex bd-highlight mb-3">
-    <div class="me-auto p-2 bd-highlight">
-      <h2>TOP INDUSTRY PROJECTS
-    </div>
-    <div class="p-2 bd-highlight">
-      <button type="button" class="btn btn-secondary" onclick="showUserCreateBox()">CREATE</button>
+            <a href="https://www.mygreatlearning.com/blog/iot-career-opportunities/" class="btnc btn-primary toggle-btn"
+              data-toggle="collapse" data-target="#project2-details">Learn more</a>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="asset/images/card3.jpg" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">DEGIGN IDEAS</h5>
+
+            <a href="https://blog.hubspot.com/website/chiropractor-websites?hubs_content=blog.hubspot.com%252Fwebsite%252Fbackend-projects&hubs_content-cta=Nathan%2520Ojaokomo"
+              class="btnc btn-primary toggle-btn" data-toggle="collapse" data-target="#project2-details">Learn more</a>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="asset/images/card4.jpg" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">WEBUI IDEAS</h5>
+
+            <a href="https://dribbble.com/tags/web%20ui%20design" class="btnc btn-primary toggle-btn"
+              data-toggle="collapse" data-target="#project2-details">Learn more</a>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="asset/images/card2.jpg" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">FRONT END IDEAS</h5>
+
+            <a href="https://alphawizz.in/WebDevelopment/?gad=1&gclid=Cj0KCQjwr82iBhCuARIsAO0EAZyAwV5rgaz8PeFftXSr6PdGPz5AkJ1J3FA149lZPI1ZVJQYV0qBoIQaAk_AEALw_wcB"
+              class="btnc btn-primary toggle-btn" data-toggle="collapse" data-target="#project2-details">Learn more</a>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="asset/images/card6.jpg" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">BACK END IDEAS</h5>
+
+            <a href="https://blog.hubspot.com/website/backend-projects?hubs_content=blog.hubspot.com%252Fwebsite%252Fbackend-projects&hubs_content-cta=Nathan%2520Ojaokomo"
+              class="btnc btn-primary toggle-btn" data-toggle="collapse" data-target="#project3-details">Learn more</a>
+
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
+  <!-- table -->
 
-  <div class="table-responsive">
+  <div class="container">
+    <div class="d-flex bd-highlight mb-3">
+      <div class="me-auto p-2 bd-highlight">
+        <h2>TOP INDUSTRY PROJECTS</h2>
+      </div>
+      <div class="p-2 bd-highlight">
+        <button type="button" class="btn btn-secondary" onclick="showUserCreateBox()"><i class="fa fa-plus"
+            aria-hidden="true"></i></button>
+      </div>
+    </div>
+
+
+    <div class="table-responsive">
       <table class="table">
         <thead>
           <tr>
@@ -72,7 +178,109 @@
         </tbody>
       </table>
     </div>
+
   </div>
+  <!-- CHARTS HEADING -->
+  <div class="container">
+    <div class="d-flex bd-highlight mb-3">
+      <div class="me-auto p-2 bd-highlight">
+        <h2>CHARTS</h2>
+      </div>
+    </div>
+  </div>
+  <!-- CHARTS -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <canvas id="myChart"></canvas>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container" style="width: 100%;">
+      <div class="col-md-12" style="background-color: rgba(9,121,116,1);">
+        <h4>Follow Us</h4>
+        <ul class="social-icons">
+          <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com/i/flow/login"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/accounts/login/"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
+        </ul>
+      </div>
+      <div class="container" style="background-color: black;">
+        <p>Copyright &copy; 2023</p>
+      </div>
+    </div>
+
+
+  </footer>
+
+
+
+
+
+  <!-- SCRIPT FOR CHARTS SRC-->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- SCRIPT FOR CHARTS -->
+  <script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        datasets: [{
+          label: 'Sales',
+          data: [12, 19, 3, 5, 2, 3, 15],
+          backgroundColor: [
+            'rgba(255, 99, 132, 0.2)',
+            'rgba(54, 162, 235, 0.2)',
+            'rgba(255, 206, 86, 0.2)',
+            'rgba(75, 192, 192, 0.2)',
+            'rgba(153, 102, 255, 0.2)',
+            'rgba(255, 159, 64, 0.2)',
+            'rgba(255, 99, 132, 0.2)'
+          ],
+          borderColor: [
+            'rgba(255, 99, 132, 1)',
+            'rgba(54, 162, 235, 1)',
+            'rgba(255, 206, 86, 1)',
+            'rgba(75, 192, 192, 1)',
+            'rgba(153, 102, 255, 1)',
+            'rgba(255, 159, 64, 1)',
+            'rgba(255, 99, 132, 1)'
+          ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: true
+            }
+          }]
+        }
+      }
+    });
+  </script>
+  <!-- SCRIPT TOGGLE EFFECT IN JQUERY -->
+  <script>
+    var toggleButton = document.querySelector('.toggle-button');
+    var table = document.querySelector('table');
+
+    toggleButton.addEventListener('click', function () {
+      table.classList.toggle('hidden');
+    });
+  </script>
+
+  </script>
+
+
+
+
+
+
 
   <script src="crud1.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.16/dist/sweetalert2.all.min.js"></script>

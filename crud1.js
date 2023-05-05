@@ -24,11 +24,11 @@ function loadTable() {
         trHTML +=
           '<td><button type="button" class="btn btn-outline-secondary" onclick="showUserEditBox(' +
           object["id"] +
-          ')">Edit</button>';
+          ')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>';
         trHTML +=
           '<button type="button" class="btn btn-outline-danger" onclick="userDelete(' +
           object["id"] +
-          ')">Del</button></td>';
+          ')"><i class="fa fa-trash-o" aria-hidden="true"></i></button></td>';
         trHTML += "</tr>";
       }
       document.getElementById("mytable").innerHTML = trHTML;
@@ -50,89 +50,127 @@ function showUserCreateBox() {
       '<input id="Duration" class="swal2-input" placeholder="Duration" required>' +
       '<input id="Memberno" class="swal2-input" placeholder="Memberno" required>' +
       '</form>',
+      focusConfirm: false,
+      showCancelButton: true,
     preConfirm: async () => {
-      const form = document.querySelector('myform');
-      const projectNameInput = document.querySelector('#Projectname');
-      const leadNameInput = document.querySelector('#Leadname');
-      const startDateInput = document.querySelector('#Startdate');
-      const durationInput = document.querySelector('#Duration');
-      const memberNoInput = document.querySelector('#Memberno');
-      const submitButton = document.querySelector('#submit');
+      const form = document.getElementById('myform');
+      if (!form.checkValidity()) {
+        Swal.showValidationMessage('Please fill out all required fields.');
+        return;
+      }
+      try {
+        userCreate();
+        Swal.fire({
+          icon: "success",
+          title: "project added successfully",//for success message
 
-      submitButton.addEventListener('click', (event) => {
-        event.preventDefault();
-
-        try {
-          userCreate();
-          // Check if project name input is empty
-          if (projectNameInput.value === '') {
-            throw new Error('Please enter a project name.');
-          }
-
-          // Check if lead name input is empty
-          if (leadNameInput.value === '') {
-            throw new Error('Please enter a lead name.');
-          }
-
-          // Check if start date input is empty and valid format
-          const dateRegex = /^\d{4}-\d{2}-\d{2}$/;
-          if (startDateInput.value === '') {
-            throw new Error('Please enter a start date.');
-          } else if (!dateRegex.test(startDateInput.value)) {
-            throw new Error('Please enter a valid start date (YYYY-MM-DD format).');
-          }
-
-          // Check if duration input is empty and numeric
-          if (durationInput.value === '') {
-            throw new Error('Please enter a duration in weeks.');
-          } else if (isNaN(durationInput.value)) {
-            throw new Error('Please enter a valid duration (numeric value only).');
-          }
-
-          // Check if member number input is empty and numeric
-          if (memberNoInput.value === '') {
-            throw new Error('Please enter the number of project members.');
-          } else if (isNaN(memberNoInput.value)) {
-            throw new Error('Please enter a valid member number (numeric value only).');
-          }
-
-          // If all inputs are valid, submit the form
-          form.submit();
-
-        } catch (error) {
-          // Display error message using SweetAlert2 library
+        });
+        loadTable();
+      } catch (error) {
+        Swal.fire({
+          icon: "error",
+          title: "Error",
+          text: error.message
+        });
+      }
+      //Regex
+         const project_name_regex = /^[a-zA-Z]*$/;
+         const Lead_name_regex = /^[a-zA-Z]*$/;
+         const date_regex = /^\d{4}-\d{2}-\d{2}$/;
+         const member_no_regex = /^(\d+)$/;
+         const duration_regex=/^(\d+ years?\s*)?(\d+ days?)?$/;
+      
+       
+      
+         if (!project_name_regex.test(Projectname)) {
+           Swal.fire({
+             title: "Invalid Projectname",
+             icon: "error",
+             showConfirmButton: true,
+         
+           });
+           return;
+         }
+      
+         if (!Lead_name_regex.test(Leadname)) {
+           Swal.fire({
+             title: "Invalid Leadnamet",
+             icon: "error",
+             showConfirmButton: false,
+           
+           });
+           return;
+         }
+      
+         if (!date_regex.test(Startdate)) {
+           Swal.fire({
+             title: "Invalid Date",
+             icon: "error",
+             showConfirmButton: false,
+           
+           });
+           return;
+         }
+      
+         if (!member_no_regex.test(Memberno)) {
+           Swal.fire({
+             title: "Invalid Members",
+             icon: "error",
+             showConfirmButton: false,
+             
+           });
+           return;
+         }
+      
+         if (!duration_regex.test(Duration)) {
           Swal.fire({
-            icon: 'error',
-            title: 'Oops...',
-            text: error.message,
+            title: "Invalid duration",
+            icon: "error",
+            showConfirmButton: false,
+            
           });
+          return;
         }
-      });
-
+      
+         if (
+           Projectname.match(project_name_regex) &&
+           Leadname.match(Lead_name_regex) &&
+           Duration.match(duration_regex) &&
+           Startdate.match(date_regex)&&
+           Memberno.match(member_no_regex)
+         ) {
+           Swal.fire({
+             icon: "success",
+             title: "Project created..!",
+             showConfirmButton: true,
+           });
+         };
+       
+        const xhttp = new XMLHttpRequest();
+        xhttp.open("POST", "http://localhost:3000/project/");
+        xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+        xhttp.send(
+          JSON.stringify({
+            Projectlogo: "C:/Users/hp/Desktop/crud/asset/images/projectrepeat.png",
+            Projectname: Projectname,
+            Leadname: Leadname,
+            Startdate: Startdate,
+            Duration: Duration,
+            Memberno: Memberno,
+          })
+        );
+        xhttp.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            const objects = JSON.parse(this.responseText);
+            Swal.fire(objects["message"]);
+            loadTable();
+          }
+        };
+      }
+    
+    
     },
-    // preConfirm: async () => {
-    //   const form = document.getElementById('myform');
-    //   if (!form.checkValidity()) {
-    //     Swal.showValidationMessage('Please fill out all required fields.');
-    //     return;
-    //   }
-    //   try {
-    //     userCreate();
-    //     Swal.fire({
-    //       icon: "success",
-    //       title: "project added successfully",//for success message
-
-    //     });
-    //     loadTable();
-    //   } catch (error) {
-    //     Swal.fire({
-    //       icon: "error",
-    //       title: "Error",
-    //       text: error.message
-    //     });
-    //   }
-    // },
-  });
+  );
 }
 
 
@@ -266,6 +304,6 @@ function userDelete(id) {
         }
       })
     }
-    //loadTable();
+   
   };
 }

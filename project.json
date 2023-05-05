@@ -1,7 +1,7 @@
 {
   "project": [
     {
-      "Projectlogo": "C:/Users/cgvak/Desktop/crud/asset/images/projectrepeat.png",
+      "Projectlogo":"C:/Users/HP/Desktop/crud/asset/images/g2tech.webp",
       "Projectname": "Multi-node quantum network",
       "Leadname": "Brakton",
       "Startdate": "07-04-2023",
@@ -37,12 +37,12 @@
       "id": 7
     },
     {
-      "Projectlogo": "C:/Users/hp/Desktop/crud/asset/images/projectrepeat.png",
+      "Projectlogo": "C:/Users/cgvak/Desktop/crud/asset/images/projectrepeat.png",
       "Projectname": "fullstack",
       "Leadname": "ranita",
-      "Startdate": "j",
+      "Startdate": "20-09-2002",
       "Duration": "3 months",
-      "Memberno": "fgj",
+      "Memberno": "10",
       "id": 8
     }
   ]
