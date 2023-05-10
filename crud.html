@@ -18,7 +18,7 @@
   <title>CRUD PROJECT</title>
 
   <link href="crud.css" rel="stylesheet">
-  <!-- <script src="validate.js"></script> -->
+
 
 </head>
 
@@ -70,7 +70,7 @@
       <div class="col-md-4">
         <div class="card">
           <img class="card-img-top" src="asset/images/card1.jpg" alt="Project 1">
-          <div class="card-body">
+          <div class="overlay">
             <h5 class="card-title">FULLSTACK IDEAS</h5>
 
             <a href="https://www.mygreatlearning.com/blog/fastest-growing-tech-jobs/" class="btnc btn-primary toggle-btn"
@@ -82,7 +82,7 @@
       <div class="col-md-4">
         <div class="card">
           <img class="card-img-top" src="asset/images/card5.jpg" alt="Project 2">
-          <div class="card-body">
+          <div class="overlay">
             <h5 class="card-title">DATABASE IDEAS</h5>
 
             <a href="https://www.mygreatlearning.com/blog/iot-career-opportunities/" class="btnc btn-primary toggle-btn"
@@ -94,7 +94,7 @@
       <div class="col-md-4">
         <div class="card">
           <img class="card-img-top" src="asset/images/card3.jpg" alt="Project 2">
-          <div class="card-body">
+          <div class="overlay">
             <h5 class="card-title">DEGIGN IDEAS</h5>
 
             <a href="https://blog.hubspot.com/website/chiropractor-websites?hubs_content=blog.hubspot.com%252Fwebsite%252Fbackend-projects&hubs_content-cta=Nathan%2520Ojaokomo"
@@ -106,7 +106,7 @@
       <div class="col-md-4">
         <div class="card">
           <img class="card-img-top" src="asset/images/card4.jpg" alt="Project 2">
-          <div class="card-body">
+          <div class="overlay">
             <h5 class="card-title">WEBUI IDEAS</h5>
 
             <a href="https://dribbble.com/tags/web%20ui%20design" class="btnc btn-primary toggle-btn"
@@ -118,7 +118,7 @@
       <div class="col-md-4">
         <div class="card">
           <img class="card-img-top" src="asset/images/card2.jpg" alt="Project 2">
-          <div class="card-body">
+          <div class="overlay">
             <h5 class="card-title">FRONT END IDEAS</h5>
 
             <a href="https://alphawizz.in/WebDevelopment/?gad=1&gclid=Cj0KCQjwr82iBhCuARIsAO0EAZyAwV5rgaz8PeFftXSr6PdGPz5AkJ1J3FA149lZPI1ZVJQYV0qBoIQaAk_AEALw_wcB"
@@ -130,7 +130,7 @@
       <div class="col-md-4">
         <div class="card">
           <img class="card-img-top" src="asset/images/card6.jpg" alt="Project 3">
-          <div class="card-body">
+          <div class="overlay">
             <h5 class="card-title">BACK END IDEAS</h5>
 
             <a href="https://blog.hubspot.com/website/backend-projects?hubs_content=blog.hubspot.com%252Fwebsite%252Fbackend-projects&hubs_content-cta=Nathan%2520Ojaokomo"
@@ -228,10 +228,10 @@
     var myChart = new Chart(ctx, {
       type: 'bar',
       data: {
-        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        labels: ['Jan', 'Feb', 'March', 'April', 'May', 'June', 'July','August','Sep','Oct','Nov','Dec'],
         datasets: [{
-          label: 'Sales',
-          data: [12, 19, 3, 5, 2, 3, 15],
+          label: 'project',
+          data: [12, 19, 3, 5, 2, 3, 15, 11, 23, 10, 4, 17],
           backgroundColor: [
             'rgba(255, 99, 132, 0.2)',
             'rgba(54, 162, 235, 0.2)',
@@ -239,7 +239,11 @@
             'rgba(75, 192, 192, 0.2)',
             'rgba(153, 102, 255, 0.2)',
             'rgba(255, 159, 64, 0.2)',
-            'rgba(255, 99, 132, 0.2)'
+            'rgba(255, 99, 132, 0.2)',
+            'rgba(255, 99, 132, 0.2)',
+            'rgba(54, 162, 235, 0.2)',
+            'rgba(255, 206, 86, 0.2)',
+            'rgba(75, 192, 192, 0.2)'
           ],
           borderColor: [
             'rgba(255, 99, 132, 1)',
@@ -248,7 +252,11 @@
             'rgba(75, 192, 192, 1)',
             'rgba(153, 102, 255, 1)',
             'rgba(255, 159, 64, 1)',
-            'rgba(255, 99, 132, 1)'
+            'rgba(255, 99, 132, 1)',
+            'rgba(255, 99, 132, 0.2)',
+            'rgba(54, 162, 235, 1.2)',
+            'rgba(255, 206, 86, 1.2)',
+            'rgba(75, 192, 192, 1.2)'
           ],
           borderWidth: 1
         }]
@@ -267,7 +275,7 @@
   <!-- SCRIPT TOGGLE EFFECT IN JQUERY -->
   <script>
     var toggleButton = document.querySelector('.toggle-button');
-    var table = document.querySelector('table');
+    var table = document.querySelector('mytable');
 
     toggleButton.addEventListener('click', function () {
       table.classList.toggle('hidden');
