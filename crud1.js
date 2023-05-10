@@ -188,7 +188,7 @@ function userCreate() {
   xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
   xhttp.send(
     JSON.stringify({
-      Projectlogo: "C:/Users/hp/Desktop/crud/asset/images/projectrepeat.png",
+      Projectlogo: "/asset/images/projectrepeat.png",
       Projectname: Projectname,
       Leadname: Leadname,
       Startdate: Startdate,
@@ -260,7 +260,7 @@ function userEdit(id) {
   xhttp.send(
     JSON.stringify({
       // id: id,
-      Projectlogo: "C:/Users/cgvak/Desktop/crud/asset/images/projectrepeat.png",
+      Projectlogo: "/asset/images/projectrepeat.png",
       Projectname: Projectname,
       Leadname: Leadname,
       Startdate: Startdate,
