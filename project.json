@@ -1,22 +1,13 @@
 {
   "project": [
     {
-      "Projectlogo": "C:/Users/HP/Desktop/crud/asset/images/g2tech.webp",
-      "Projectname": "Multi-node quantum network",
-      "Leadname": "Brakton",
-      "Startdate": "07-04-2023",
-      "Duration": "2 days",
-      "Memberno": "6",
-      "id": 4
-    },
-    {
       "id": 5,
       "Projectname": "Immunity passport service design",
       "Leadname": "Greyson",
       "Startdate": "09-09-2009",
       "Duration": "6 months",
       "Memberno": 5,
-      "Projectlogo": "C:/Users/hp/Desktop/crud/asset/images/passportlogo.png"
+      "Projectlogo": "C:/Users/cgvak/Desktop/crud/asset/images/passportlogo.png"
     },
     {
       "id": 6,
@@ -25,15 +16,15 @@
       "Startdate": "10-03-2002",
       "Duration": "1 year",
       "Memberno": 7,
-      "Projectlogo": "C:/Users/hp/Desktop/crud/asset/images/steelplantlogo.gif"
+      "Projectlogo": "C:/Users/cgvak/Desktop/crud/asset/images/steelplantlogo.gif"
     },
     {
-      "Projectlogo": "C:/Users/hp/Desktop/crud/asset/images/projectrepeat.png",
+      "Projectlogo": "C:/Users/cgvak/Desktop/crud/asset/images/projectrepeat.png",
       "Projectname": "Jiuzhang Prototype Quantum Computer",
       "Leadname": "yadav",
       "Startdate": "20-09-2009",
-      "Duration": "2 yeas",
-      "Memberno": "10",
+      "Duration": "1 years",
+      "Memberno": "20-09-2009",
       "id": 7
     },
     {

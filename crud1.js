@@ -40,7 +40,7 @@ loadTable();
 
 function showUserCreateBox() {
   Swal.fire({
-    title: "Create user",
+    title: "Create project",
     html:
       '<form id="myform"  class="was-validated">' +
       '<input id="id" type="hidden">' +
@@ -109,6 +109,7 @@ function showUserCreateBox() {
              showConfirmButton: false,
            
            });
+
            return;
          }
       
@@ -151,7 +152,7 @@ function showUserCreateBox() {
         xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
         xhttp.send(
           JSON.stringify({
-            Projectlogo: "C:/Users/hp/Desktop/crud/asset/images/projectrepeat.png",
+            Projectlogo: "/Users/cgvak/Desktop/crud/asset/images/projectrepeat.png",
             Projectname: Projectname,
             Leadname: Leadname,
             Startdate: Startdate,
@@ -215,7 +216,7 @@ function showUserEditBox(id) {
       //const user = objects["objects"];
       console.log(objects);
       Swal.fire({
-        title: "Edit User",
+        title: "Edit project",
         html:
           '<input id="id" type="hidden" value="' +
           objects[`${id}`] +
