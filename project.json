@@ -1,7 +1,7 @@
 {
   "project": [
     {
-      "Projectlogo": "/asset/images/projectrepeat.png",
+      "Projectlogo": "./asset/images/card1.jpg",
       "Projectname": "Immunity passport service design",
       "Leadname": "Greyson",
       "Startdate": "09-09-2009",
@@ -28,7 +28,7 @@
       "id": 7
     },
     {
-      "Projectlogo": "/asset/images/projectrepeat.png",
+      "Projectlogo": "//asset//images//projectrepeat.png",
       "Projectname": "fullstack",
       "Leadname": "ranita",
       "Startdate": "20-09-2002",
