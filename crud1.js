@@ -14,8 +14,8 @@ function loadTable() {
         trHTML += "<td>" + object["id"] + "</td>";
         trHTML +=
           '<td><img width="50px" src="' +
-          object["projectlogo"] +
-          '" class="projectlogo"></td>';
+          object["Projectlogo"] +
+          '" class="Projectlogo"></td>';
         trHTML += "<td>" + object["Projectname"] + "</td>";
         trHTML += "<td>" + object["Leadname"] + "</td>";
         trHTML += "<td>" + object["Startdate"] + "</td>";
@@ -152,7 +152,7 @@ function showUserCreateBox() {
         xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
         xhttp.send(
           JSON.stringify({
-            Projectlogo: "/Users/cgvak/Desktop/crud/asset/images/projectrepeat.png",
+            Projectlogo: "./asset/images/clubhouselogo.png",
             Projectname: Projectname,
             Leadname: Leadname,
             Startdate: Startdate,
@@ -188,7 +188,7 @@ function userCreate() {
   xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
   xhttp.send(
     JSON.stringify({
-      Projectlogo: "/asset/images/projectrepeat.png",
+      Projectlogo:"./asset/images/clubhouselogo.png",
       Projectname: Projectname,
       Leadname: Leadname,
       Startdate: Startdate,
@@ -260,7 +260,7 @@ function userEdit(id) {
   xhttp.send(
     JSON.stringify({
       // id: id,
-      Projectlogo: "/asset/images/projectrepeat.png",
+      Projectlogo: "./asset/images/clubhouselogo.png",
       Projectname: Projectname,
       Leadname: Leadname,
       Startdate: Startdate,
